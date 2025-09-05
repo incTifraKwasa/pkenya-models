@@ -1,14 +1,39 @@
 [project]
 name = "pkenya-models"
 version = "0.1.0"
-description = "Add your description here"
+description = "Shared Tortoise ORM models for the PKenya/datasavannah ecosystem"
 readme = "README.md"
-requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [
+    { name = "Kwasa", email = "kwasa@pkenya.co.ke" }
+]
+requires-python = ">=3.11"
 dependencies = [
-    "rav>=0.1.1",
     "tortoise-orm>=0.25.1",
+    "aiosqlite>=0.21.0", # for SQLite support in dev/test
 ]
 
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.6.8",     # linter
+    "black>=24.8.0",   # formatter
+    "pytest>=8.3.0",   # testing
+    "pytest-asyncio>=0.23.0",  # async tests
+    "mypy>=1.11.0",    # type checking
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
