@@ -1,10 +1,10 @@
-from apps.models.engineering.architecture import Architect, QuantitySurveyor
-from apps.models.health.medics import Doctor
-from apps.models.commerce.accountant import Accountant
-from apps.models.law.advocate import Advocate
-from apps.models.health.pharmacy import Pharmacy, PharmTech
-from apps.models.engineering.engineer import Engineer
-from apps.models.health.clinicians import Clinician, Qualification
+from pkenya_models.apps.models.engineering.architecture import Architect, QuantitySurveyor
+from pkenya_models.apps.models.health.medics import Doctor
+from pkenya_models.apps.models.commerce.accountant import Accountant
+from pkenya_models.apps.models.law.advocate import Advocate
+from pkenya_models.apps.models.health.pharmacy import Pharmacy, PharmTech
+from pkenya_models.apps.models.engineering.engineer import Engineer
+from pkenya_models.apps.models.health.clinicians import Clinician, Qualification
 
 
 __all__ = [
