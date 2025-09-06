@@ -40,3 +40,5 @@ class Doctor(Model):
 
     def __str__(self):
         return f"{self.full_names} ({self.license_no})"
+
+

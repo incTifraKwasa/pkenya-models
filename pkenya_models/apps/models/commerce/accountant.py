@@ -7,6 +7,7 @@ class Accountant(models.Model):
     member_no = fields.CharField(max_length=200, db_index=True, unique=True)
     status = fields.CharField(max_length=20)
     standing = fields.CharField(max_length=200)
+    level = fields.CharField(max_length=100, null=True)
 
     class Meta:
         db_table = "accountant"
