@@ -19,6 +19,8 @@ class Doctor(Model):
     # Address & contact
     address = fields.TextField(null=True)
     postal_address = fields.TextField(null=True)
+    postal_code = fields.CharField(max_length=100, null=True)
+    location = fields.CharField(max_length=100, null=True)
     email = fields.CharField(max_length=255, null=True)
     phone = fields.CharField(max_length=50, null=True)
 

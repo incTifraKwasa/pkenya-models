@@ -37,3 +37,9 @@ testpaths = ["tests"]
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+
+[tool.aerich]
+tortoise_orm = "app.core.config.TORTOISE_ORM"
+location = "./migrations"
+src_folder = "./"
