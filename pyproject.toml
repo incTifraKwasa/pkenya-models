@@ -1,6 +1,6 @@
 [project]
-name = "models"
-version = "0.1.0"
+name = "pkenya-models"
+version = "0.1.1"
 description = "Shared Tortoise ORM models for the PKenya/datasavannah ecosystem"
 readme = "README.md"
 license = { text = "MIT" }
