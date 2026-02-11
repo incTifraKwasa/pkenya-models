@@ -1,5 +1,5 @@
 [project]
-name = "pkenya-models"
+name = "models"
 version = "0.1.0"
 description = "Shared Tortoise ORM models for the PKenya/datasavannah ecosystem"
 readme = "README.md"

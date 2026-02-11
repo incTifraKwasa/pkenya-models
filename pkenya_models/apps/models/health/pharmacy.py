@@ -10,7 +10,7 @@ class BaseProfession(models.Model):
     id = fields.UUIDField(pk=True, db_index=True)
     name = fields.CharField(max_length=255)
     registration_number = fields.CharField(max_length=100, unique=True, db_index=True)
-    license_number = fields.CharField(max_length=100, unique=True, db_index=True)
+    license_number = fields.CharField(max_length=100,  db_index=True)
     status = fields.CharField(max_length=50)
     valid_till = fields.DateField(null=True)
     timestamp = fields.DatetimeField(auto_now_add=True)
