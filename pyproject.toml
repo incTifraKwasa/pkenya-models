@@ -7,7 +7,7 @@ license = { text = "MIT" }
 authors = [
     { name = "Kwasa", email = "kwasa@pkenya.co.ke" }
 ]
-requires-python = ">=3.11"
+requires-python = ">=3.9,<3.12"
 dependencies = [
     "tortoise-orm>=0.25.1",
     "aiosqlite>=0.21.0", # for SQLite support in dev/test
